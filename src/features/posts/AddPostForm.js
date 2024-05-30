@@ -50,11 +50,11 @@ const AddPostForm = () => {
     ))
 
     return (
-        <section style={{ maxWidth: '600px', marginTop:"50px", margin: '0 auto', padding: '20px', border: '1px solid #ccc', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-        <h2 style={{ textAlign: 'center', color: '#333' }}>Add a New Post</h2>
+        <section style={{ maxWidth: '600px', marginTop:"50px", padding: '20px', border: '1px solid #ccc', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+        <h2 style={{ fontSize:"28px", textAlign: 'center', color: '#3D3B40' }}>Add a New Post</h2>
         <form>
             <div style={{ marginBottom: '15px' }}>
-                <label htmlFor="postTitle" style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>Post Title:</label>
+                <label htmlFor="postTitle" style={{color:"#4F4E51", display: 'block', fontWeight: 'medium', fontSize:"20px", marginBottom: '5px' }}>Post Title:</label>
                 <input
                     type="text"
                     id="postTitle"
@@ -65,14 +65,14 @@ const AddPostForm = () => {
                 />
             </div>
             <div style={{ marginBottom: '15px' }}>
-                <label htmlFor="postAuthor" style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>Author:</label>
+                <label htmlFor="postAuthor" style={{ color:"#4F4E51",display: 'block', fontWeight: 'medium', fontSize:"20px", marginBottom: '5px' }}>Author:</label>
                 <select id="postAuthor" value={userId} onChange={onAuthorChanged} style={{ width: '100%', padding: '10px', border: '1px solid #ccc', borderRadius: '4px' }}>
                     <option value=""></option>
                     {usersOptions}
                 </select>
             </div>
             <div style={{ marginBottom: '15px' }}>
-                <label htmlFor="postContent" style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>Content:</label>
+                <label htmlFor="postContent" style={{ display: 'block', fontWeight: 'medium', fontSize:"20px", color:"#4F4E51", marginBottom: '5px' }}>Content:</label>
                 <textarea
                     id="postContent"
                     name="postContent"
@@ -85,7 +85,7 @@ const AddPostForm = () => {
                 type="button"
                 onClick={onSavePostClicked}
                 disabled={!canSave}
-                style={{ width: '100%', padding: '10px', backgroundColor: canSave ? '#007BFF' : '#ccc', color: '#fff', border: 'none', borderRadius: '4px', cursor: canSave ? 'pointer' : 'not-allowed' }}
+                style={{ width: '100%', padding: '10px', backgroundColor: canSave ? '#378CE7' : '#ccc', color: '#fff', border: 'none', borderRadius: '4px', cursor: canSave ? 'pointer' : 'not-allowed' }}
             >Save Post</button>
         </form>
     </section>

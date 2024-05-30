@@ -29,7 +29,8 @@ header {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  /* align-items: flex-start; */
   background-color: rgb(22, 106, 179);
   color: whitesmoke;
   position: sticky;

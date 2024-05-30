@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
     return (
-        <header className="Header">
+        <header className="Header ">
             <h1>Redux Blog</h1>
             <nav>
                 <ul style={{fontSize:"16px"}}>
